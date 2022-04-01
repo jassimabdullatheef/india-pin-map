@@ -1,6 +1,8 @@
 # india-pin-map
 
-Add Google Map API Key to the index.html file line 36 for production purpose.
+Add Google Map API Key to the index.html file line 26 for production purpose.
+
+To view the map, just open the `index.html` in any browser.
 
 ## To Clean up the source data and transform to a json
 1. Install Python
@@ -21,18 +23,30 @@ pip install pandas
 ```
 pip install ipykernel
 ```
+6. Open and execute Jupyter notebook `data/trasform-data`
 
 
 ### Data headers
 country code      : iso country code, 2 characters
+
 postal code       : varchar(20)
+
 place name        : varchar(180)
+
 admin name1       : 1. order subdivision (state) varchar(100)
+
 admin code1       : 1. order subdivision (state) varchar(20)
+
 admin name2       : 2. order subdivision (county/province) varchar(100)
+
 admin code2       : 2. order subdivision (county/province) varchar(20)
+
 admin name3       : 3. order subdivision (community) varchar(100)
+
 admin code3       : 3. order subdivision (community) varchar(20)
+
 latitude          : estimated latitude (wgs84)
+
 longitude         : estimated longitude (wgs84)
+
 accuracy          : accuracy of lat/lng from 1=estimated to 6=centroid
