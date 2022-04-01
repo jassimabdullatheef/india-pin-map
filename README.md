@@ -1,5 +1,7 @@
 # india-pin-map
 
+Add Google Map API Key to the index.html file line 36 for production purpose.
+
 ## To Clean up the source data and transform to a json
 1. Install Python
 2. Prepare a virutal environment using
